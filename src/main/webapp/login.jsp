@@ -12,6 +12,10 @@
 </head>
 <body>
 
+<%
+    request.getParameter("usernameInput")
+%>
+
     <h1>My God... it's a login page.</h1>
 
     <form action="/login.jsp" method="post">
