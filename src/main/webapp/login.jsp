@@ -9,12 +9,11 @@
 <html>
 <head>
     <title>Login</title>
+    <%@include file="partials/head.jsp"%>
 </head>
 <body>
 
-<%
-    request.getParameter("usernameInput")
-%>
+    <%@include file="partials/navbar.jsp"%>
 
     <h1>My God... it's a login page.</h1>
 
@@ -23,7 +22,20 @@
         <input type="text" id="username-input" name="usernameInput">
         <label for="password-input">Password</label>
         <input type="password" id="password-input" name="passwordInput">
+        <button>Submit</button>
     </form>
+
+    <%
+        String username = request.getParameter("usernameInput");
+        String password = request.getParameter("passwordInput");
+        if(username != null && password != null) {
+            if (username.equalsIgnoreCase("admin") && password.equalsIgnoreCase("password")) {
+                response.sendRedirect("/profile.jsp");
+            }
+        }
+    %>
+
+    <%@include file="partials/body-links.jsp"%>
 
 </body>
 </html>

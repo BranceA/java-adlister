@@ -1,0 +1,30 @@
+/*#4F8798*/
+/*#81C398*/
+/*#EEE394*/
+/*#E48248*/
+/*#DB4059*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+nav a{
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F8798;
+}

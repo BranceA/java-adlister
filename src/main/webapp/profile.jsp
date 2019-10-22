@@ -9,8 +9,14 @@
 <html>
 <head>
     <title>Title</title>
+    <%@include file="partials/head.jsp"%>
 </head>
 <body>
+
+<%@include file="partials/navbar.jsp"%>
+
+
+<%@include file="partials/body-links.jsp"%>
 
 </body>
 </html>
